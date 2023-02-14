@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">peep</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" alt="moon" id="moon">
+        <img src="mountains_behind.png" alt="mountains_behind" id="mountains_behind">
+        <h2 id ="text">Peep's World</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" alt="mountains_front" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h1>Sex With My Ex</h1>
+        <p>Fuck me, like we're lyin' on our deathbed
+            I can feel a sudden emptiness
+            I'm here to grant your one last wish
+            So, fuck me, like we're lyin' on our death bed
+            Hear the sadness in your laughter
+            She's afraid of what comes after me, true love
+            <br><br>
+            I don't know when I'll be back in town (back in town)
+            All I know is that she'll wait around, for me
+            All I know is that she'll hold me down (all I know is that she'll hold me down)
+            My girl keeps all ten toes on the ground, for me
+            I can feel it, I can feel it now
+            I can feel you watchin' after me, holdin' my breath
+            <br><br>
+            Catch a feelin'
+            Catch a feelin' now
+            I still feel your skin all over me
+            Sex with my ex
+            <br><br>
+            Fuck me, like we're lyin' on our deathbed
+            I can feel a sudden emptiness
+            I'm here to grant your one last wish
+            <br><br>
+            So, fuck me, like we're lyin' on our death bed
+            I can feel a sudden emptiness
+            I'm here to grant your one last wish
+            So, I don't know when I'll be back in town (back in town)
+            All I know is that she'll wait around, for me
+            All I know is that she'll hold me down (all I know is that she'll hold me down)
+            My girl keeps all ten toes on the ground, for me
+            I can feel it, I can feel it now
+            I can feel you watchin' after me, holdin' my breath
+            <br><br>
+            Catch a feelin'
+            Catch a feelin' now
+            I still feel your skin all over me
+            Sex with my ex
+            <br><br>
+            Fuck me, like we're lyin' on our deathbed
+            I can feel a sudden emptiness
+            I'm here to grant your one last wish, so
+            So, fuck me, like we're lyin' on our death bed
+            I can feel a sudden emptiness
+            I'm here to grant your one last wish, so
+            <br><br>
+            One last wish
+            Fuck me, like we're lyin' on our deathbed
+            I can feel a sudden emptiness
+            I'm here to grant your one last wish, so
+            Fuck me </p>
+
+
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars')
+        let moon = document.getElementById('moon')
+        let mountains_behind = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+        let header = document.querySelector('header');
+        
+
+        window.addEventListener('scroll',function(){
+            let value = scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 0.7 + 'px';
+            mountains_behind.style.top = value * 0.4 + 'px'
+            mountains_front.style.top = value * 0 + 'px'
+            text.style.marginRight = value * 3.5 + 'px'
+            text.style.marginTop = value * 0.7 + 'px'
+            btn.style.marginTop = value * 0.7 + 'px'
+            header.style.top = value * 0.4 + 'px'
+        })
+    </script>
+</body>
+</html>
